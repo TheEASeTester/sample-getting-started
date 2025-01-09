@@ -38,7 +38,7 @@ public class SystemResource {
 		if (!systemConfig.isInMaintenance()) {
 			return Response.ok(System.getProperties()).build();
 		} else {
-			return Response.status(Response.Status.SERVICE_UNAVAILABLE).entity("ERROR: Service is currently in maintenance. Sorry")
+			return Response.status(Response.Status.SERVICE_UNAVAILABLE).entity("ERROR: Service is currently in maintenance. Very Sorry")
 					.build();
 		}
 	}
